@@ -1,0 +1,158 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+header {
+    position: fixed;
+    top: 10px; /* Adiciona margem no topo */
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color: #f0f0f0;
+}
+
+#logo {
+    width: 200px; /* Largura do logo */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+}
+
+#chat-container {
+    margin-top: 60px; /* Ajustar conforme a altura do cabeçalho */
+    margin-bottom: 60px; /* Ajustar conforme a altura do input */
+    padding-top: 10px; /* Espaçamento interno na parte superior */
+    margin-top: 180px;
+    height: calc(100% - 120px); /* Altura total menos cabeçalho e input */
+    overflow-y: auto; /* Habilita a rolagem */
+    width: 95%;
+}
+
+#chat-box {
+    height: 95%;
+    overflow-y: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#messages div {
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    background-color: #f8f8f8;
+    border-radius: 18px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    text-align: justify;
+}
+
+#ask-faith-echo {
+    text-align: center;
+    color: #666;
+    font-weight: bold;
+}
+
+#placeholder-message {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-style: italic; /* Estilo opcional */
+    color: #666; /* Cor do texto, ajuste conforme necessário */
+    line-height: 2;
+}
+
+#placeholder-message b {
+    font-style: normal;
+}
+
+#messages div.user {
+    font-weight: bold; /* Aplica negrito às mensagens do usuário */
+}
+
+.input-container {
+    position: fixed;
+    bottom: 10px;
+    left: 50%; /* Centraliza o container */
+    transform: translateX(-50%); /* Ajuste fino para centralizar */
+    width: 95%; /* Mesma largura que o #chat-container */
+    z-index: 1000;
+    background-color: #f0f0f0;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.input-button {
+    display: flex;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: gray;
+}
+
+button {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: #cccccc;
+}
+
+/* Estilos para o layout responsivo */
+@media screen and (max-width: 768px) {
+    header {
+        position: none;
+        background-color: rgba(240, 240, 240, 0.9); /* Adiciona transparência */
+    }
+
+    .container {
+        flex-direction: column; /* Coluna em vez de linha para o layout responsivo */
+        align-items: center; /* Alinhar itens ao centro verticalmente */
+    }
+
+    .input-container {
+        position: fixed; /* Remove a posição fixa */
+        width: 85%;
+        max-width: 1000px;
+    }
+
+    .input-button {
+        position: fixed; /* Mantém o input e o botão fixos */
+        left: 3%;
+        justify-content: center;
+        bottom: 1px;
+        transform: translateX(-1%); /* Ajuste fino para centralizar */
+        width: 95%; /* Define a largura para 98% da tela */
+        z-index: 1000;
+        background-color: #f0f0f0;
+    }
+}

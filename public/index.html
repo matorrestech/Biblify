@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Biblefy</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img src="/image/logo.svg" alt="Faith Conneceted" id="logo" />
+            </header>
+
+            <div id="chat-container">
+                <div id="chat-box">
+                    <div id="messages">
+                        <p id="placeholder-message">
+                            <b
+                                >Descreva sua situação para aconcelhamento.<br />
+                                <img
+                                    src="./image/aconselhamento.png"
+                                    alt="Aconselhamento" /><br /></b
+                            >"Briguei com minha melhor amiga e não sei lidar com
+                            isso."<br /><br />
+                            <b
+                                >Pergunte ao Biblefy quaisquer fatos sobre a
+                                Bíblia.<br />
+                                <img
+                                    src="./image/pergunta-para-biblia.png"
+                                    alt="Pergunta para Bíblia" /><br /></b
+                            >"Qual é o livro de Mateus?"<br />"Onde Amós
+                            morava?"
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="input-container">
+                <div class="input-button">
+                    <input
+                        type="text"
+                        id="user-input"
+                        placeholder="Digite sua pergunta ou aconselhamento aqui..."
+                    />
+                    <button id="send-button" onclick="sendMessage()">➤</button>
+                </div>
+            </div>
+        </div>
+        <script src="/js/script.js"></script>
+    </body>
+</html>

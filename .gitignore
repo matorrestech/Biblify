@@ -1,0 +1,8 @@
+# Arquivos de ambiente
+.env
+
+# Arquivos do editor de código e Sistema Operacional
+.vscode
+
+# Arquivos de modulo do node
+node_modules/
