@@ -6,9 +6,9 @@ const port = process.env.PORT || 3000
 const cors = require("cors")
 
 const corsOptions = {
-    origin: "https://biblify-mt.vercel.app/",
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    credentials: true, // Isso permite que os cookies sejam enviados junto com a solicitação, se necessário.
+    origin: "https://biblify-mt.vercel.app", // Especifica a origem que será permitida
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // Métodos HTTP permitidos
+    credentials: true, // Permite o envio de cookies e dados de autenticação
 }
 
 app.use(cors(corsOptions))
