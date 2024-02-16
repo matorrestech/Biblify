@@ -2,11 +2,11 @@ require("dotenv").config()
 const express = require("express")
 const axios = require("axios")
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 const cors = require("cors")
 
 const corsOptions = {
-    origin: "https://api.openai.com/v1/chat/completions",
+    origin: "https://biblify-mt.vercel.app/",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true, // Isso permite que os cookies sejam enviados junto com a solicitação, se necessário.
 }
