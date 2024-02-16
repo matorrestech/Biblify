@@ -66,17 +66,20 @@ async function getChatGPTResponse(userInput) {
     const combinedInput = instruction + " " + userInput
     console.log(combinedInput)
     try {
-        const response = await fetch("/get-response", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                messages: [
-                    { role: "user", content: combinedInput }, // Corrigido para evitar duplicação de instrução
-                ],
-            }),
-        })
+        const response = await fetch(
+            "https://biblify-mt.vercel.app/server.js",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    messages: [
+                        { role: "user", content: combinedInput }, // Corrigido para evitar duplicação de instrução
+                    ],
+                }),
+            }
+        )
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`)
         }
