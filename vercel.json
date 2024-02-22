@@ -12,9 +12,6 @@
             "dest": "/"
         }
     ],
-    "env": {
-        "OPENAI_API_KEY": "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"
-    },
     "headers": [
         {
             "source": "/(.*)",
