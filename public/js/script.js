@@ -66,7 +66,7 @@ async function getChatGPTResponse(userInput) {
     console.log(combinedInput)
     try {
         const response = await fetch(
-            "https://biblify-mt.vercel.app/get-response",
+            "https://vercel.com/matheus-torres-projects/biblify/3RAP4m7kiHsFcpJaPFghVhLESM4G/get-response",
             {
                 method: "POST",
                 headers: {
