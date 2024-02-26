@@ -66,7 +66,7 @@ async function getChatGPTResponse(userInput) {
     console.log(combinedInput)
     try {
         const response = await fetch(
-            "https://biblefy-app.vercel.app/get-response",
+            "https://biblefy.vercel.app//get-response",
             {
                 method: "POST",
                 headers: {

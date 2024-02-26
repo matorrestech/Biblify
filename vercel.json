@@ -18,7 +18,7 @@
             "headers": [
                 {
                     "key": "Access-Control-Allow-Origin",
-                    "value": "https://biblefy-app.vercel.app"
+                    "value": "https://biblefy.vercel.app/"
                 },
                 {
                     "key": "Access-Control-Allow-Methods",

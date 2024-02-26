@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000
 const cors = require("cors")
 
 const corsOptions = {
-    origin: "https://biblefy-app.vercel.app",
+    origin: "https://biblefy.vercel.app/",
     optionsSuccessStatus: 200,
 }
 
