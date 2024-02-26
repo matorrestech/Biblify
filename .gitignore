@@ -9,3 +9,6 @@ node_modules/
 
 # Arquivo package-lock.json
 package-lock.json
+
+# Arquivo vercel.json
+vercel.json
