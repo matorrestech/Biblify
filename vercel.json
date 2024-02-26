@@ -18,7 +18,7 @@
             "headers": [
                 {
                     "key": "Access-Control-Allow-Origin",
-                    "value": "https://vercel.com/matheus-torres-projects/biblify/3RAP4m7kiHsFcpJaPFghVhLESM4G"
+                    "value": "https://biblefy-app.vercel.app"
                 },
                 {
                     "key": "Access-Control-Allow-Methods",
