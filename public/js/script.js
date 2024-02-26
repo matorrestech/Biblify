@@ -1,6 +1,6 @@
 const instruction =
     "Responda a pergunta baseado nas instruções:\n" +
-    " - Use linguamgem simples, moderna, atual como se estivesse conversando com um amigo;\n" +
+    " - Use linguagem simples, moderna, atual como se estivesse conversando com um amigo;\n" +
     " - Responda pergunta que tenham embasamento bíblico e nos ensinamentos de Jesus e de Deus;\n" +
     " - Não responda nenhum outro tipo de pergunta;\n" +
     " - Mantenha seu foco em compartilhar conhecimento e compreensão dos ensinamentos bíblicos, mas faça isso de uma maneira mais informal e acessível;\n" +
@@ -66,7 +66,7 @@ async function getChatGPTResponse(userInput) {
     console.log(combinedInput)
     try {
         const response = await fetch(
-            "https://vercel.com/matheus-torres-projects/biblify/3RAP4m7kiHsFcpJaPFghVhLESM4G/get-response",
+            "https://biblefy-app.vercel.app/get-response",
             {
                 method: "POST",
                 headers: {
